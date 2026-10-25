@@ -43,6 +43,18 @@ st.set_page_config(
 st.markdown(
     """
     <style>
+    /* Hide Streamlit Top-Right Toolbar (Share, Edit, GitHub Icon, Menu) */
+    #MainMenu {visibility: hidden !important;}
+    header {visibility: hidden !important; height: 0px !important;}
+    [data-testid="stHeader"] {display: none !important;}
+    [data-testid="stToolbar"] {display: none !important; visibility: hidden !important;}
+    [data-testid="stActionToolbar"] {display: none !important;}
+    [data-testid="stDecoration"] {display: none !important;}
+    .stAppDeployButton {display: none !important;}
+    div[data-testid="stToolbar"] {display: none !important;}
+    div.stToolbar {display: none !important;}
+    footer {visibility: hidden !important;}
+
     /* Global styling */
     .main-title {
         font-size: 2.2rem;
